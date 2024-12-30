@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+
+            .title {
+                font-size: 2.5em;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+            .menu a {
+                font-size: 1em;
+                margin: 5px;
+            }
+        }
+        @media (max-width: 480px) {
+            .title {
+                font-size: 2.2em;
+            }
+
+            .section h2 {  
+                font-size: 1.3em;
+            }
+
+        .menu a {
+                font-size: 0.9em;
+                padding: 10px 15px;
+            }
+
+            .header-image img {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; 
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);  
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="2024_09_21_18_49_IMG_9820.jpg" alt="Foto 1">
+        <img src="2024_10_01_10_31_IMG_9934.jpg" alt="Foto 2">
+    </div>
+</body>
+</html>

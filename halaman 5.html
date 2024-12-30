@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interactive Form</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<style>      
+  @media (max-width: 768px) {
+      .content {
+          padding: 20px;
+      }
+
+      .title {
+          font-size: 2.5em;
+      }
+
+      .section h2 {
+          font-size: 1.5em;
+      }
+      .menu a {
+          font-size: 1em;
+          margin: 5px;
+      }
+  }
+  @media (max-width: 480px) {
+      .title {
+          font-size: 2.2em;
+      }
+
+      .section h2 {  
+          font-size: 1.3em;
+      }
+
+  .menu a {
+          font-size: 0.9em;
+          padding: 10px 15px;
+      }
+
+      .header-image img {
+          width: 100%;
+          border-radius: 8px;
+      }
+  }
+  @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+  }
+</style>
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="form-container">
+    <h2>Kirim Ucapan</h2>
+    <form id="myForm" action="submit.php" method="post">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+      <label for="ucapan">Ucapan:</label>
+      <textarea id="ucapan" name="ucapan" required></textarea>
+      <button type="submit">Kirim Ucapan</button>
+    </form>
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
